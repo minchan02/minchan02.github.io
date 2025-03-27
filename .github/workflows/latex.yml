@@ -1,4 +1,4 @@
-name: Build and Deploy LaTeX Resume
+name: Build LaTeX and Save PDF to root
 
 on:
   push:
@@ -9,21 +9,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Set up LaTeX
         uses: xu-cheng/latex-action@v2
         with:
           root_file: main.tex
 
-      - name: Copy PDF to public folder
-        run: |
-          mkdir public
-          cp main.pdf public/
+      - name: Copy PDF to root for GitHub Pages
+        run: cp main.pdf index.pdf
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+      - name: Commit and push PDF to main branch
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add index.pdf
+          git commit -m "Update PDF"
+          git push
