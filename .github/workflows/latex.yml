@@ -17,12 +17,12 @@ jobs:
           root_file: main.tex
 
       - name: Copy PDF to root for GitHub Pages
-        run: cp main.pdf index.pdf
+        run: cp main.pdf cv.pdf
 
       - name: Commit and push PDF to main branch
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add index.pdf
+          git add cv.pdf
           git commit -m "Update PDF"
           git push
