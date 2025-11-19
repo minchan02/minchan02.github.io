@@ -1,10 +1,15 @@
 \documentclass{resume}
-\usepackage[utf8]{inputenc}
-\usepackage{kotex}
+% --- 한글 + UTF-8 ---
+\usepackage[utf8]{inputenc}  % 소스 파일이 UTF-8 인코딩일 때
+\usepackage{kotex}           % 한국어 처리
+
+% --- 기본적으로 쓰이는 패키지 (resume.cls에 없으면 직접 로드) ---
 \usepackage{tabularx}
 \usepackage{graphicx}
 \usepackage{hyperref}
-\usepackage{fontawesome}
+
+% --- FontAwesome 아이콘 패키지 ---
+\usepackage{fontawesome}     % \faPhone 등 v4 스타일 아이콘
 
 \begin{document}
 \fontfamily{ppl}\selectfont
@@ -13,13 +18,18 @@
 {
     \large {김민찬(KIM MIN CHAN)} \newline
     \small{
+    % \begin{align}
         Predic\newline
-        \href{}{Web Application Security Researcher} \newline
-        \href{https://predic.kr}{Channels} \textbf{·}
-        \href{https://blog.predic.kr}{Blog} \textbf{·}
-        \href{https://github.com/minchan02}{Github} \textbf{·}
-        \href{https://dreamhack.io/users/17504}{Dreamhack}
-        \newline
+    % \end{align}
+    \href{}{Web Application Security Researcher} \newline
+
+        \clink{
+            \href{https://predic.kr}{Channels} \textbf{·}
+            \href{https://blog.predic.kr}{Blog} \textbf{·}
+            \href{https://github.com/minchan02}{Github}
+            \textbf{·}
+             \href{https://dreamhack.io/users/17504}{Dreamhack}
+        } \newline
     }
 }
 & 
@@ -27,60 +37,55 @@
     \includegraphics[width=4cm]{profile_image.jpg}
 }
 \end{tabularx}
-
 \csection{Contact}{\small
     \begin{itemize}
-         \faPhone \space \texttt{|} +82 10-5439-0487 \\
+         \faPhone \space \texttt{|} +\texttt82 10-5439-0487 \\
          \faEnvelope \space \texttt{|} kmc0487@gmail.com \\
          \raisebox{-0.4em}{\includegraphics[width=1.2em]{discord_icon.png}}  \texttt{|} @predic02
     \end{itemize}
 }
-
 \csection{Education}{\small
     \begin{itemize}
-        \item \textbf{국민대학교 소프트웨어학부\hfill \textsl{2021.03 - 2028.03}}\newline{3학년 1학기 이후 휴학 중}\newline{전체 학점 4.14/4.5}\newline{전공 학점 4.18/4.5}
+        % item 1 %
+        \item \textbf{국민대학교 소프트웨어학부\hfill \textsl(2021.03 -2028.03)}\newline{3학년 1학기 이후 휴학 중}\newline{전체 학점 4.14/4.5}\newline{전공 학점 4.18/4.5}
     \end{itemize}
 }
-
 \csection{Affiliation}{\small
     \begin{itemize}
-        \item \textbf{KITRI WhitehatSchool 2nd\hfill \textsl{2024.03 - 2024.09}}
-        \item \textbf{TeamH4C\hfill \textsl{2024.09 - 2025.03}}
-        \item \textbf{RubiyaLab CTF Team\hfill \textsl{2025.03 - }}
-        \item \textbf{Re-write WebHacking Project Team\hfill \textsl{2025.04 - }}
-        \item \textbf{BoB 14th\hfill \textsl{2025.07 - }}      
+        \item \textbf{KITRI WhitehatSchool 2nd\hfill \textsl(2024.03-2024.09)}
+        \item \textbf{TeamH4C\hfill \textsl(2024.09-2025.03)}
+        \item \textbf{RubiyaLab CTF Team\hfill \textsl(2025.03-)}
+        \item \textbf{Re-write WebHacking Project Team\hfill \textsl(2025.04-)}
+        \item \textbf{BoB 14th\hfill \textsl(2025.07-)}      
     \end{itemize}
 }
-
 \csection{Experience}{\small
     \begin{itemize}
-        \item \textbf{Stealien (Freelancer)\hfill \textsl{2025.05 - 2025.06}}\newline{통신사 대상 웹 블랙박스 모의해킹 및 침투 테스트}
+        \item \textbf{Stealien (Freelancer)\hfill \textsl(2025.05-2025.06)}\newline{통신사 대상 웹 블랙박스 모의해킹 및 침투 테스트}
+        
     \end{itemize}
 } 
-
 \csection{Activity \texttt{\&} Projects}{\small
     \begin{itemize}
         \item \textbf{Webhacking.kr all solved (ID:kmc0487)}
-        \item \textbf{HAF Wargame 플랫폼 운영 (WhitehatSchool 2기 프로젝트)\hfill \textsl{2024.05 - 2024.12}}\newline{WEB 5문제, MISC 1문제 제작}\newline{Log4j 1-day, ejs 1-day, prototype pollution 등의 문제 제작}
-        \item \textbf{제 1회 빡공팟: Contest Nebula - Webula Team 멘토\hfill \textsl{2024.10 - 2025.02}}\newline{Wordpress 0-day Project 멘토링}\newline{PHP기반 코드 취약점 분석 멘토링}
-        \item \textbf{Stealien Security Leader 5th (CVE-Manager)\hfill \textsl{2024.11 - 2025.01}}\newline{\faGithub\space\href{https://github.com/minchan02/CVE-Manager}{CVE-Manager}}\newline{웹 블랙박스 기반 취약점 진단,공격 자동화 툴 제작}\newline{PHP, Apache, Spring 등 최신 웹 프레임워크 CVE 대상 PoC 분석}
-        \item \textbf{화이트햇스쿨 3기 1단계 조교\hfill \textsl{2025.03 - 2025.04}}
-        \item \textbf{화이트햇스쿨 3기 Web3보안 프로젝트팀(도지5층) PL\hfill \textsl{2025.05 - 2025.08}}\newline{Web3초심자를 위한 깃북 제작 프로젝트}\newline{Web3기초 및 프로젝트 멘토링}
-        \item \textbf{RubiyaLab Web Study Head\hfill \textsl{2025.04 - 2025.07}}\newline{XSS, CSRF, SQL Injection 등 웹 취약점 기초 스터디}\newline{HTTP Request Smuggling, Next.js, ejs 등 1-day 분석 심화 스터디}
-        \item \textbf{Advanced XSLeaks Research\hfill \textsl{2025.05 - 2025.07}}\newline{\space\href{https://research.rewritelab.org/2025/07/28/\%5BKR\%5D\%20Advanced\%20XSLeaks\%20Research:\%20Comprehensive\%20Analysis\%20of\%20Browser-Based\%20Information\%20Disclosure\%20Techniques\%20\%E2\%80\%94\%20Part\%201}{Link : Advanced XSLeaks Research: Comprehensive Analysis of Browser-Based Information Disclosure Techniques — Part 1}}\newline{XSLeaks 기법 연구 : Error Events, CSS Tricks, Navigations}
-        \item \textbf{Deep Research of Spring\hfill \textsl{2025.08 - 2025.09}}\newline{\space\href{https://research.rewritelab.org/2025/09/24/\%5BKR\%5D\%20How\%20does\%20Spring\%20work\%20-\%20Deep\%20Research\%20of\%20Spring/}{Link : How does Spring work? - Deep Research of Spring}}\newline{Spring 빌드 및 최적화 과정, Spring 문법 연구}\newline{Spring 1-day 취약점 분석}
+        \item \textbf{HAF Wargame 플랫폼 운영 (WhitehatSchool 2기 프로젝트)\hfill \textsl(2024.05-2024.12)}\newline{WEB 5문제, MISC 1문제 제작}\newline{Log4j 1-day, ejs 1-day, prototype pollution 등의 문제 제작}
+        \item \textbf{제 1회 빡공팟: Contest Nebula - Webula Team 멘토\hfill \textsl(2024.10-2025.02)}\newline{Wordpress 0-day Project 멘토링}\newline{PHP기반 코드 취약점 분석 멘토링}
+        \item \textbf{Stealien Security Leader 5th (CVE-Manager)\hfill \textsl(2024.11-2025.01)}\newline{\faGithub\space\href{https://github.com/minchan02/CVE-Manager}{CVE-Manager}}\newline{웹 블랙박스 기반 취약점 진단,공격 자동화 툴 제작}\newline{PHP, Apache, Spring 등 최신 웹 프레임워크 CVE 대상 PoC 분석}
+        \item \textbf{화이트햇스쿨 3기 1단계 조교\hfill \textsl(2025.03-2025.04)}
+        \item \textbf{화이트햇스쿨 3기 Web3보안 프로젝트팀(도지5층) PL\hfill \textsl(2025.05-2025.08)}\newline{Web3초심자를 위한 깃북 제작 프로젝트}\newline{Web3기초 및 프로젝트 멘토링}
+        \item \textbf{RubiyaLab Web Study Head\hfill \textsl(2025.04-2025.07)}\newline{XSS, CSRF, SQL Injection 등 웹 취약점 기초 스터디}\newline{HTTP Request Smuggling, Next.js, ejs 등 1-day 분석 심화 스터디}
+        \item \textbf{Advanced XSLeaks Research\hfill \textsl(2025.05-2025.07)}\newline{\space\href{https://research.rewritelab.org/2025/07/28/\%5BKR\%5D\%20Advanced\%20XSLeaks\%20Research:\%20Comprehensive\%20Analysis\%20of\%20Browser-Based\%20Information\%20Disclosure\%20Techniques\%20\%E2\%80\%94\%20Part\%201}{Link : Advanced XSLeaks Research: Comprehensive Analysis of Browser-Based Information Disclosure Techniques — Part 1}}\newline{XSLeaks 기법 연구 : Error Events, CSS Tricks, Navigations}
+        \item \textbf{Deep Research of Spring\hfill \textsl(2025.08-2025.09)}\newline{\space\href{https://research.rewritelab.org/2025/09/24/\%5BKR\%5D\%20How\%20does\%20Spring\%20work\%20-\%20Deep\%20Research\%20of\%20Spring/}{Link : How does Spring work? - Deep Research of Spring}}\newline{Spring 빌드 및 최적화 과정, Spring 문법 연구}\newline{Spring 1-day 취약점 분석}
         \item \textbf{2025 CODEGATE Writeup}\newline{\space\href{https://research.rewritelab.org/2025/08/25/\%5BKR\%5D\%202025\%20CODEGATE\%20CTF\%20Web\%20Challenges\%20Final\%20Writeup/}{Link : 2025 CODEGATE CTF Web Challenges Final Writeup}}\newline{Charset을 활용한 Dompurify 우회 문제(securewebmail) writeup 작성}\newline{Node.js ROP 문제(chachadotcom) writeup 작성}
-        \item \textbf{V8 JS Engine Fuzzing (BoB 14기 프로젝트)\hfill \textsl{2025.09 - }}\newline{Fuzzilli 기반의 상태 지향 퍼저 커스텀}\newline{V8 상태전이 관련 1-day 분석을 통한 CodeQL 쿼리 생성 및 Corpus 제작}\newline{상태 전이 유발 Mutator 제작}
+        \item \textbf{V8 JS Engine Fuzzing (BoB 14기 프로젝트)\hfill \textsl(2025.09-)}\newline{Fuzzilli 기반의 상태 지향 퍼저 커스텀}\newline{V8 상태전이 관련 1-day 분석을 통한 CodeQL 쿼리 생성 및 Corpus 제작}\newline{상태 전이 유발 Mutator 제작}
     \end{itemize}
 }
-
 \csection{Dreamhack}{\small
     \begin{itemize}
         \item \textbf{Dreamhack 웹해킹 TOP 10}\newline{\space\href{https://dreamhack.io/users/17504}{https://dreamhack.io/users/17504}}
         \item \textbf{Dreamhack Challenge Write}\newline{\space\href{https://dreamhack.io/wargame?search=Predic}{https://dreamhack.io/wargame?search=Predic}}
     \end{itemize}
 }
-
 \csection{Challenge Write}{\small
     \begin{itemize}
         \faGithub\space\href{https://github.com/minchan02/WarGame}{My Challenges}
@@ -93,39 +98,35 @@
         \newline\newline
     \end{itemize}
 }
-
 \csection{Presentations}{\small
     \begin{itemize}
         \item \textbf{2025 삼성 SDS 초청 강연}\newline{\space\href{https://predic.kr/Broken_Clients.pdf}{Broken Clients : The Hidden dangers in browsers}}
         \item \textbf{2025 서부발전 정보보안 인력 양성 교육 강연}\newline{\space\href{https://predic.kr/2025_WEB_Application_Vulnerabilities.pdf}{2025 WEB Appication Vulnerabilities}}
     \end{itemize}
 }
-
 \csection{CTF \texttt{\&} Awards}{\small
     \begin{itemize}
-        \item \textbf{3rd}, Layer7 CTF (Individual)\hfill \textsl{2025}
-        \item \textbf{4th}, MSG CTF (Team. 개웃겨서클레이낳음)\hfill \textsl{2025}
-        \item \textbf{Finalist}, ELECCON CTF (Team. 개웃겨서프레딕낳음)\hfill \textsl{2025}
-        \item \textbf{Finalist}, Blackhat MEA CTF (Team. RubiyaLab Expeditions)\hfill \textsl{2025}
-        \item \textbf{4th}, HITCON CTF (Team. CTF Demon Hunters)\hfill \textsl{2025}
-        \item \textbf{10th}, DEFCON 33 (Team. Cold Fusion)\hfill \textsl{2025}
-        \item \textbf{Finalist}, HACKSIUM BUSAN (Team. 데푸콩 보내주세요)\hfill \textsl{2025}
-        \item \textbf{Finalist}, CODEGATE CTF (Team. RubiyaLab)\hfill \textsl{2025}
-        \item \textbf{1st}, RISING PHEONIX 3.0 CTF (Team. 아미타이거)\hfill \textsl{2025}
-        \item \textbf{장려상}, TS 보안허점을 찾아라! (Team. Typescript)\hfill \textsl{2024}
-        \item \textbf{Finalist}, LG U+ Security Hackathon (Team. 팀명정하는게문제푸는거보다어려워)\hfill \textsl{2024}
-        \item \textbf{1st}, Autohack 자동차해킹방어 경진대회 (Team. PhysicalLab)\hfill \textsl{2024}
-        \item \textbf{2nd}, 호남 사이버 컨퍼런스 웹취약점 경진대회 (Team. 호남사나이)\hfill \textsl{2024}
-        \item \textbf{공군참모총장상}, 군장병 공개 SW온라인 해커톤\hfill \textsl{2022}
-        \item \textbf{정보과학회장상}, 한국코드페어 SW빌더스 챌린지\hfill \textsl{2019}
+        \item \textbf{3rd}, Layer7 CTF (Individual)\hfill \textsl2025
+        \item \textbf{4th}, MSG CTF (Team. 개웃겨서클레이낳음)\hfill \textsl2025
+        \item \textbf{Finalist}, ELECCON CTF (Team. 개웃겨서프레딕낳음)\hfill \textsl2025
+        \item \textbf{Finalist}, Blackhat MEA CTF (Team. RubiyaLab Expeditions)\hfill \textsl2025
+        \item \textbf{4th}, HITCON CTF (Team. CTF Demon Hunters)\hfill \textsl2025
+        \item \textbf{10th}, DEFCON 33 (Team. Cold Fusion)\hfill \textsl2025
+        \item \textbf{Finalist}, HACKSIUM BUSAN (Team. 데푸콩 보내주세요)\hfill \textsl2025
+        \item \textbf{Finalist}, CODEGATE CTF (Team. RubiyaLab)\hfill \textsl2025
+        \item \textbf{1st}, RISING PHEONIX 3.0 CTF (Team. 아미타이거)\hfill \textsl2025
+        \item \textbf{장려상}, TS 보안허점을 찾아라! (Team. Typescript)\hfill \textsl2024
+        \item \textbf{Finalist}, LG U+ Security Hackathon (Team. 팀명정하는게문제푸는거보다어려워)\hfill \textsl2024
+        \item \textbf{1st}, Autohack 자동차해킹방어 경진대회 (Team. PhysicalLab)\hfill \textsl2024
+        \item \textbf{2nd}, 호남 사이버 컨퍼런스 웹취약점 경진대회 (Team. 호남사나이)\hfill \textsl2024
+        \item \textbf{공군참모총장상}, 군장병 공개 SW온라인 해커톤\hfill \textsl2022
+        \item \textbf{정보과학회장상}, 한국코드페어 SW빌더스 챌린지\hfill \textsl2019
     \end{itemize}
 }
-
 \csection{Bug Bounty}{\small
     \begin{itemize}
         \item \textbf{KVE-2024-1676 (Stored XSS)}
         \item \textbf{FVE-2024-f465-69453 (Bug)}
     \end{itemize}
 }
-
 \end{document}
